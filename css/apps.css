@@ -1,0 +1,88 @@
+/*Seudo selecotres : root*/
+:root {
+     --claro: #96AAF7;
+     --Oscuro: #243575;
+     --agris: #485175;
+     --normal: #3C57C2;
+     --base: #4B6DF5;
+     --fuentePrincipal: 3.8rem; /*Se puede seleccionar el tamañanao de texto desde aqui */
+}
+
+html{
+     font-size: 62.5%;
+}
+
+    body{
+     font-size: 16px; /* 1rem= 20px*/
+     font-family: Arial, Helvetica, sans-serif;
+    }
+        h1.titulo{
+            text-align: center;
+            color: blue; 
+            font-size: var(--fuentePrincipal);
+            font-family: 'Bungee Spice', cursive;
+            font-weight: 1200;
+        }
+
+            .titulo span {
+                font-size: 2rem;
+            }
+
+                span {
+                    font-size: 2rem;
+                }
+
+.nav-bg {
+     background-color: var(--Oscuro);
+     padding: 1rem;
+}
+
+    .caja{
+        max-width: 120rem;
+        font-size: 2rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+        .caja a {
+            padding: 1rem;
+            background-color: var(--claro);
+            text-decoration: none;
+        }
+
+        .caja a:hover {
+            padding: 1rem;
+            background-color: var(--normal);
+            color: var(--claro);
+            text-decoration: none;
+        }
+
+@media (min-width: 768px){
+    .caja {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px){
+    .caja a{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+
+
+/*ide # tinen que ser unicos
+Especificidad los selectores van es cansada
+al menos que tenga un especificador 
+. "Despues del titulo se le pone el nombre del target"
+para darle mas espeficidad se le pone !important depues del color
+
+    margin-top: 0rem;
+    margin-right: auto;
+    margin-bottom: 0rem;
+    margin-left: auto;
+    0 auto*/ 
