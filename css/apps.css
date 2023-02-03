@@ -4,7 +4,7 @@
      --Oscuro: #243575;
      --agris: #485175;
      --normal: #3C57C2;
-     --base: #4B6DF5;
+     --base: #022360;
      --fuentePrincipal: 3.8rem; /*Se puede seleccionar el tamañanao de texto desde aqui */
 }
 
@@ -31,6 +31,19 @@ html{
                 span {
                     font-size: 2rem;
                 }
+    header {
+
+    }
+    header .primeraParteHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+    header .primeraParteHeader div {
+        width: 30%;
+    }
+    header .primeraParteHeader img {
+        width: 100%;
+    }
 
 .nav-bg {
      background-color: var(--Oscuro);
