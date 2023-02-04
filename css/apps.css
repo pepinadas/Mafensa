@@ -9,41 +9,64 @@
 }
 
 html{
-     font-size: 62.5%;
+    font-size: 62.5%;
 }
 
-    body{
-     font-size: 16px; /* 1rem= 20px*/
-     font-family: Arial, Helvetica, sans-serif;
+body{
+    font-size: 16px; /* 1rem= 20px*/
+    font-family: Arial, Helvetica, sans-serif;
     }
-        h1.titulo{
-            text-align: center;
-            color: blue; 
-            font-size: var(--fuentePrincipal);
-            font-family: 'Bungee Spice', cursive;
-            font-weight: 1200;
+
+    header {
+        
+    }
+    h1.titulo{
+        text-align: center;
+        color: blue; 
+        font-size: 1.3rem;
+        /* ------------------------------------ Cambiar fuente de el texto -------------------------------------------------------- */
+        /* font-family: 'Bungee Spice', cursive; */
+        font-weight: 1200;
+    }
+
+        .titulo span {
+            font-size: 2rem;
         }
 
-            .titulo span {
+            span {
                 font-size: 2rem;
             }
-
-                span {
-                    font-size: 2rem;
-                }
-    header {
-
-    }
-    header .primeraParteHeader {
+        header .primeraParteHeader {
         display: flex;
         justify-content: space-between;
     }
-    header .primeraParteHeader div {
-        width: 30%;
-    }
-    header .primeraParteHeader img {
-        width: 100%;
-    }
+        header .primeraParteIzquierdaHeader {
+            width: 40%;
+        }
+            header .primeraParteHeader img {
+                width: 100%;
+            }
+        header .primeraParteDerechaHeader {
+            width: 55%;
+        }
+        header .primeraParteDerechaHeader div:nth-child(1) {
+            height: 30%;
+        }
+        header .primeraParteDerechaHeader div:nth-child(1) h1 {
+            margin: 0;
+            margin-top: 30px;
+            padding-left: 3px;
+            color: var(--agris);
+            font-size: 3rem;
+        }
+        header .primeraParteDerechaHeader div:nth-child(2) h1 {
+            margin: 0;
+            padding-left: 3px;
+            color: var(--claro);
+            font-family: 'Autour One', cursive;
+            font-size: 6.5rem;
+        }
+                
 
 .nav-bg {
      background-color: var(--Oscuro);
