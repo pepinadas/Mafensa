@@ -17,9 +17,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     }
 
-    header {
-        
-    }
+
     h1.titulo{
         text-align: center;
         color: blue; 
@@ -44,33 +42,35 @@ body{
             width: 40%;
         }
             header .primeraParteHeader img {
+                margin-top: 3px;
+                margin-left: 3px;
                 width: 100%;
             }
         header .primeraParteDerechaHeader {
             width: 55%;
         }
-        header .primeraParteDerechaHeader div:nth-child(1) {
-            height: 30%;
-        }
-        header .primeraParteDerechaHeader div:nth-child(1) h1 {
-            margin: 0;
-            margin-top: 30px;
-            padding-left: 3px;
-            color: var(--agris);
-            font-size: 3rem;
-        }
-        header .primeraParteDerechaHeader div:nth-child(2) h1 {
-            margin: 0;
-            padding-left: 3px;
-            color: var(--claro);
-            font-family: 'Autour One', cursive;
-            font-size: 6.5rem;
-        }
+            header .primeraParteDerechaHeader div:nth-child(1) {
+                height: 30%;
+            }
+                header .primeraParteDerechaHeader div:nth-child(1) h1 {
+                    margin: 0;
+                    margin-top: 30px;
+                    padding-left: 3px;
+                    color: var(--agris);
+                    font-size: 3rem;
+                }
+                header .primeraParteDerechaHeader div:nth-child(2) h1 {
+                    margin: 0;
+                    padding-left: 3px;
+                    color: var(--claro);
+                    font-family: 'Autour One', cursive;
+                    font-size: 6.5rem;
+                }
                 
 
 .nav-bg {
-     background-color: var(--Oscuro);
-     padding: 1rem;
+    padding: 1rem;
+    background-color: var(--Oscuro);
 }
 
     .caja{
@@ -78,14 +78,19 @@ body{
         font-size: 2rem;
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
         .caja a {
+            margin: 5px;
+            width: 12rem;
             padding: 1rem;
-            background-color: var(--claro);
+            text-align: center;
+            border-radius: 5px;
+            background-color: white;
             text-decoration: none;
+            color: var(--Oscuro);
         }
 
         .caja a:hover {
@@ -94,20 +99,6 @@ body{
             color: var(--claro);
             text-decoration: none;
         }
-
-@media (min-width: 768px){
-    .caja {
-        flex-direction: row;
-        align-items: center;
-    }
-}
-
-@media (min-width: 768px){
-    .caja a{
-        flex-direction: row;
-        align-items: center;
-    }
-}
 
 
 
