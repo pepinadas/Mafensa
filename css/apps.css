@@ -52,6 +52,9 @@ body{
         }
             header .primeraParteDerechaHeader div:nth-child(1) {
                 height: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
                 header .primeraParteDerechaHeader div:nth-child(1) h1 {
                     margin: 0;
@@ -60,6 +63,12 @@ body{
                     color: var(--agris);
                     font-size: 3rem;
                 }
+            header .primeraParteDerechaHeader div:nth-child(2) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 40px;
+            }
                 header .primeraParteDerechaHeader div:nth-child(2) h1 {
                     margin: 0;
                     padding-left: 3px;
