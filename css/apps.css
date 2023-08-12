@@ -1,6 +1,7 @@
-/*Seudo selecotres : root*/
+/*Seudo selecotres : root, introduces los colores que vas a ocupar mas adelante en la creaion de codigo */
+/*los rem son medidores de medida para el tamaño */
 :root {
-     --claro: #96AAF7;
+     --claro: #96AAF7; /*propiedad personalizada */
      --Oscuro: #243575;
      --agris: #485175;
      --normal: #3C57C2;
@@ -9,25 +10,25 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 62.5%; /*Se reinicia el tamaño del documento para poder trabajar de manera mas sencilla con los rem */
 }
 
 body{
-    font-size: 16px; /* 1rem= 20px*/
+    font-size: 16px; /* 1rem= 20px, se colocan para poder trabajar de manera sencilla con los rem */ 
     font-family: Arial, Helvetica, sans-serif;
     }
 
 
-    h1.titulo{
-        text-align: center;
+    h1.titulo{ /* Configuracion del diseño en h1 en codigo css, el punto funciona para hacer clases  */ 
+        text-align: center; /*Propiedad : Valor en css*/ 
         color: blue; 
         font-size: 1.3rem;
         /* ------------------------------------ Cambiar fuente de el texto -------------------------------------------------------- */
         /* font-family: 'Bungee Spice', cursive; */
-        font-weight: 1200;
+        font-weight: 1200; /*400=normal, bold= 700*/
     }
-
-        .titulo span {
+ 
+        .titulo span { /*Entre mas especifico sea va a tener mas importante  a no ser que tenga la etiqeuta important */ 
             font-size: 2rem;
         }
 
@@ -35,8 +36,8 @@ body{
                 font-size: 2rem;
             }
         header .primeraParteHeader {
-        display: flex;
-        justify-content: space-between;
+        display: flex; /*activa mas opciones*/
+        justify-content: space-between; /*te deja separar los contenidos, row de izquierda a derecha, colum de arriba hacia abajo */
     }
         header .primeraParteIzquierdaHeader {
             width: 40%;
@@ -68,7 +69,7 @@ body{
                 }
                 
 
-.nav-bg {
+.nav-bg { /*Background */
     padding: 1rem;
     background-color: var(--Oscuro);
 }
@@ -76,7 +77,7 @@ body{
     .caja{
         max-width: 120rem;
         font-size: 2rem;
-        margin: 0 auto;
+        margin: 0 auto; /*Agusta atomaticamente el margen*/
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -93,16 +94,24 @@ body{
             color: var(--Oscuro);
         }
 
-        .caja a:hover {
+        .caja a:hover { /*da el efecto cuando estas encima de la caja */
             padding: 1rem;
             background-color: var(--normal);
-            color: var(--claro);
+            color: var(--claro); /*se tiene que poner var() para agarrar las variables definidas */
             text-decoration: none;
         }
 
+        @media (min-widht: 480px) { /*Ajusta el codigo de acuerdo a las medidas de la pantalla */ 
+           body{
+            background-color:gray ;
+           }
+        }
+        /*Tener Responsabilidad del diseño web con  Media queries */
 
 
-/*ide # tinen que ser unicos
+
+
+/*ide # tinen que ser unicos si se ocupa id aca en css se tiene que poner el # 
 Especificidad los selectores van es cansada
 al menos que tenga un especificador 
 . "Despues del titulo se le pone el nombre del target"
@@ -113,3 +122,17 @@ para darle mas espeficidad se le pone !important depues del color
     margin-bottom: 0rem;
     margin-left: auto;
     0 auto*/ 
+/*te da el formato para poder editar las imagenes desde css
+    [src=imagen.jpg] { 
+        color: blue ; 
+    }
+
+    .id . clase, se heredan los elemetos del id a los de la clase 
+    .clase > p{
+        selecciona todo slos parrafos hijos para aplicar el formato de la clase 
+        displayblock se muestra hacia abajo 
+        displayline se muestra hacia la derecha 
+        margin agrega separacion 
+        paddin color del fondo 
+        felx box te separa los elementos en cajas 
+    */ 
