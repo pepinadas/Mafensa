@@ -24,9 +24,9 @@
 <body>
 
 
-    <nav id="header" class="navbar  bg-body-tertiary fixed-top" style="z-index: 2;">
-        <div class="container">
-            <a class="navbar-brand" th:href="@{/inicio}">
+    <nav id="header" class="navbar  bg-body-tertiary">
+        <div class="container header-container">
+            <a class="navbar-brand" href="./index.html">
                 <img src="https://lh3.googleusercontent.com/pw/AMWts8CSrMgk7BQueyADpdRmp_cWdEGW2Wz7stFST6v4HJyw5W6B-TjaKedkcujU-koNDbe0gFodVc9DxnA5gAGNAIfZ6_GV0FMwHxPLqZm-tRQGlqaZOGPa3zEZFqAuDVODuA4H9kkiP4FKydWJFQlS5Tt0cw=w320-h381-no?authuser=0" style="height: 90px;" alt="MAF img">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,16 +35,16 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./links/Inicio.html">Inicio</a>
+                        <a class="nav-link" href="#">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" th:href="#">Nosotros</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#search" style="cursor: pointer;">Nuestra Historia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#search" style="cursor: pointer;">Diseños</a>
+                        <a class="nav-link" href="#">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" th:href="@{/contacto}">Contacto</a>
+                        <a class="nav-link" href="#">Bolsa de Trabajo</a>
                     </li>
                 </ul>
             </div>
